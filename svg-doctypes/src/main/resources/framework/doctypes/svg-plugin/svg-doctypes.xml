@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  CoreMedia SVG Extension Content Types.
+-->
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Name="blueprint-campaigns-doctypes"
+                   Title="SVG Content Types">
+
+  <ImportDocType Name="CMPicture"/>
+
+  <DocType Name="CMSVG" Parent="CMPicture">
+    <LinkListProperty Name="master" Max="1" LinkType="CMSVG" Override="true" extensions:weakLink="true"/>
+    <BlobProperty Name="data" MimeType="image/svg+xml" Override="true"/>
+    <!-- Option to render the SVG as inline code. -->
+    <IntProperty Name="inlineCode"/>
+  </DocType>
+
+</DocumentTypeModel>

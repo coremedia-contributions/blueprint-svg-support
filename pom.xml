@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.coremedia.blueprint</groupId>
+  <artifactId>extensions.svg</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>svg-cae</module>
+    <module>svg-contentbeans</module>
+    <module>svg-doctypes</module>
+    <module>svg-shared</module>
+    <module>svg-headless-server</module>
+    <module>svg-studio-server</module>
+  </modules>
+
+</project>

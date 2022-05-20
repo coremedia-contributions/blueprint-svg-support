@@ -1,0 +1,7 @@
+interface CMSVG @inherit(from: ["CMPicture"]) {
+  inlineCode: Boolean
+}
+
+type CMSVGImpl implements CMSVG @inherit(from: ["CMPictureImpl"]) {
+  inlineCode: Boolean
+}
