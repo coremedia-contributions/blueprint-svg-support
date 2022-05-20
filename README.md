@@ -33,10 +33,13 @@ mvn -f workspace-configuration/extensions extensions:sync -Denable=svg
 Download a copy of this repository and extract the files into your Blueprint workspace to `modules/extensions/svg`.
 
 ### Frontend Code
-This repository also contains a custom brick that needs to be added to your frontend. For now the only option is to copy the brick to your workspace `frontend/bricks` folder.
+This repository also contains a custom brick that needs to be added to your frontend.
+Add a reference to the `svg-support` brick to the `frontend/workspace.yaml`.
 
-```shell
-cp -r modules/extensions/svg/frontend/bricks/svg frontend/bricks/svg
+```yaml
+packages:
+  ...
+  - "../../modules/extensions/svg/frontend/bricks/svg-support"
 ```
 
 Afterwards you can include the brick in your theme by adding the following dependency in the theme `package.json`.
