@@ -39,13 +39,13 @@ Add a reference to the `svg-support` brick to the `frontend/workspace.yaml`.
 ```yaml
 packages:
   ...
-  - "../../modules/extensions/svg/frontend/bricks/svg-support"
+  - "../modules/extensions/svg/frontend/bricks/svg-support"
 ```
 
 Afterwards you can include the brick in your theme by adding the following dependency in the theme `package.json`.
 
 ```json
-"@coremedia/brick-svg-support": "workspace:*"
+"@coremedia/brick-svg-support": "^1.0.0",
 ```
 
 ---
