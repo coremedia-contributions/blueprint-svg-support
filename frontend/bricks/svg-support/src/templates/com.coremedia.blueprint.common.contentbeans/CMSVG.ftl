@@ -13,8 +13,6 @@
 <#assign additionalAttributes=cm.localParameters().additionalAttributes!{}/>
 <#assign renderInline=self.asInlineCode() && self.data?has_content />
 
-<!-- asInlineCode(): ${self.asInlineCode()?c} -->
-
 <#if renderInline>
   <#-- render as inline SVG code -->
   <@cm.include self=self view="inline"/>
