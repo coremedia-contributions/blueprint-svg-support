@@ -40,11 +40,11 @@ class ExtendedBlobPropertyField extends BlobPropertyField {
       const blob: Blob = as(value, Blob);
       if (!blob || blob.getSize() === undefined) {
         activeItem = BlobPropertyFieldBase.EMPTY_CONTAINER_ITEM_ID;
-      }
-
-      const contentType = blob.getContentType();
-      if (contentType === "image/svg+xml") {
-        activeItem = BlobPropertyFieldBase.IMAGE_CONTAINER_ITEM_ID;
+      } else {
+        const contentType = blob.getContentType();
+        if (contentType === "image/svg+xml") {
+          activeItem = BlobPropertyFieldBase.IMAGE_CONTAINER_ITEM_ID;
+        }
       }
     }
 
