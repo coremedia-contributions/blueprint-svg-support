@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.coremedia.blueprint.campaigns.headless.CampaignsConfig
+com.coremedia.blueprint.svg.caas.SvgCaasConfiguration
