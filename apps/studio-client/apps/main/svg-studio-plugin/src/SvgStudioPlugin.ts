@@ -6,6 +6,7 @@ import AddCKEditorPluginsPlugin
 import CopyResourceBundleProperties
   from "@coremedia/studio-client.main.editor-components/configuration/CopyResourceBundleProperties";
 import StudioPlugin from "@coremedia/studio-client.main.editor-components/configuration/StudioPlugin";
+import IEditorContext from "@coremedia/studio-client.main.editor-components/sdk/IEditorContext";
 import AddTabbedDocumentFormsPlugin
   from "@coremedia/studio-client.main.editor-components/sdk/plugins/AddTabbedDocumentFormsPlugin";
 import TabbedDocumentFormDispatcher
@@ -15,6 +16,7 @@ import ConfigUtils from "@jangaroo/runtime/ConfigUtils";
 import resourceManager from "@jangaroo/runtime/l10n/resourceManager";
 import SVGPluginValidation_properties from "./SVGPluginValidation_properties";
 import CMSVGForm from "./forms/CMSVGForm";
+import SVGUtil from "./utils/SVGUtil";
 
 interface SvgStudioPluginConfig extends Config<StudioPlugin> {
 }
@@ -56,6 +58,14 @@ class SvgStudioPlugin extends StudioPlugin {
 
     }), config));
   }
+
+  override init(editorContext: IEditorContext) {
+    super.init(editorContext);
+
+    // Apply content initializer
+    SVGUtil.registerInitializer();
+  }
+
 }
 
 export default SvgStudioPlugin;
