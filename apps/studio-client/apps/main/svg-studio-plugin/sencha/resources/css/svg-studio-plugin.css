@@ -1,0 +1,7 @@
+.ck-content .image-inline img,
+.ck-content .image-inline picture {
+  min-width: 64px;
+  min-height: 64px;
+  cursor: pointer;
+}
+
