@@ -26,17 +26,17 @@
       <groupId>com.coremedia.cms</groupId>
       <artifactId>cap-unified-api</artifactId>
     </dependency>
-
     <dependency>
       <groupId>com.coremedia.cms</groupId>
-      <artifactId>middle.cap-validation</artifactId>
+      <artifactId>cap-rest-plugins</artifactId>
+      <version>${cm.common.core.version}</version>
     </dependency>
-
     <dependency>
       <groupId>com.coremedia.cms</groupId>
-      <artifactId>middle.coremedia-validation</artifactId>
+      <artifactId>coremedia-rest-plugins</artifactId>
+      <version>${cm.common.core.version}</version>
+      <scope>compile</scope>
     </dependency>
-
 
     <!-- THIRD-PARTY dependencies -->
     <dependency>

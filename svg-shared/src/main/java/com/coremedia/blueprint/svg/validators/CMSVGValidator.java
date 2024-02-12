@@ -3,7 +3,7 @@ package com.coremedia.blueprint.svg.validators;
 import com.coremedia.cap.common.Blob;
 import com.coremedia.cap.content.Content;
 import com.coremedia.cap.content.ContentType;
-import com.coremedia.rest.cap.validation.AbstractContentTypeValidator;
+import com.coremedia.rest.cap.validation.ContentTypeValidatorBase;
 import com.coremedia.rest.validation.Issues;
 import com.coremedia.rest.validation.Severity;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -19,12 +19,14 @@ import org.apache.commons.lang3.StringUtils;
  * - Check if either data or dataUrl is set
  * - Check if data is set when the inlineCode equals true
  */
-public class CMSVGValidator extends AbstractContentTypeValidator {
+public class CMSVGValidator extends ContentTypeValidatorBase {
 
   @JsonCreator
   public CMSVGValidator(@JsonProperty(value = "content-type", required = true) @NonNull ContentType type,
                            @JsonProperty(value = "subtypes") @Nullable Boolean isValidatingSubtypes) {
-    super(type, isValidatingSubtypes);
+    super();
+    setContentType(type.toString());
+    setValidatingSubtypes(isValidatingSubtypes);
   }
 
   @Override

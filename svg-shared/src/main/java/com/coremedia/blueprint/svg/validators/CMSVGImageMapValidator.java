@@ -2,7 +2,7 @@ package com.coremedia.blueprint.svg.validators;
 
 import com.coremedia.cap.content.Content;
 import com.coremedia.cap.content.ContentType;
-import com.coremedia.rest.cap.validation.AbstractContentTypeValidator;
+import com.coremedia.rest.cap.validation.ContentTypeValidatorBase;
 import com.coremedia.rest.validation.Issues;
 import com.coremedia.rest.validation.Severity;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -15,12 +15,14 @@ import edu.umd.cs.findbugs.annotations.Nullable;
  *
  * The validator checks if the picture property of the image map is set to an CMSVG since this is not supported for now.
  */
-public class CMSVGImageMapValidator extends AbstractContentTypeValidator {
+public class CMSVGImageMapValidator extends ContentTypeValidatorBase {
 
   @JsonCreator
   public CMSVGImageMapValidator(@JsonProperty(value = "content-type", required = true) @NonNull ContentType type,
                                 @JsonProperty(value = "subtypes") @Nullable Boolean isValidatingSubtypes) {
-    super(type, isValidatingSubtypes);
+    super();
+    setContentType(type.toString());
+    setValidatingSubtypes(isValidatingSubtypes);
   }
 
   @Override

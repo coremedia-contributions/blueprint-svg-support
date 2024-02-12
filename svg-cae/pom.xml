@@ -32,10 +32,10 @@
       <artifactId>cap-unified-api</artifactId>
     </dependency>
 
-    <dependency>
+    <!--dependency>
       <groupId>com.coremedia.cms</groupId>
       <artifactId>cae-contentbeanservices</artifactId>
-    </dependency>
+    </dependency-->
 
     <dependency>
       <groupId>com.coremedia.cms</groupId>
