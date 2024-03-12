@@ -1,20 +1,18 @@
 package com.coremedia.blueprint.svg;
 
 import com.coremedia.blueprint.svg.view.SvgInlineMarkupView;
-//import com.coremedia.objectserver.config.ContentBeanServicesConfiguration;
 import com.coremedia.objectserver.view.View;
 import com.coremedia.springframework.customizer.Customize;
 import com.coremedia.springframework.xml.ResourceAwareXmlBeanDefinitionReader;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 
 import java.util.HashMap;
 import java.util.Map;
 
-//@Import({ContentBeanServicesConfiguration.class})
 @ImportResource(value = {
-        "classpath:/META-INF/coremedia/svg-contentbeans.xml"
+        "classpath:/META-INF/coremedia/svg-contentbeans.xml",
+        "classpath:/com/coremedia/cae/view-services.xml"
 }, reader = ResourceAwareXmlBeanDefinitionReader.class)
 
 public class SvgCaeConfiguration {
