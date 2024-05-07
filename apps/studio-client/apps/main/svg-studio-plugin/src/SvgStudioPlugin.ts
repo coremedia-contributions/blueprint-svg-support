@@ -27,7 +27,6 @@ class SvgStudioPlugin extends StudioPlugin {
     super(ConfigUtils.apply(Config(SvgStudioPlugin, {
 
       rules: [
-
         Config(TabbedDocumentFormDispatcher, {
           plugins: [
             Config(AddTabbedDocumentFormsPlugin, {
@@ -37,13 +36,6 @@ class SvgStudioPlugin extends StudioPlugin {
             }),
           ],
         }),
-
-        /*Config(RichTextArea, {
-          plugins: [
-            Config(AddCKEditorPluginsPlugin, { plugins: ["cmsvgsupport"] }),
-          ],
-        }),*/
-
       ],
 
       configuration: [

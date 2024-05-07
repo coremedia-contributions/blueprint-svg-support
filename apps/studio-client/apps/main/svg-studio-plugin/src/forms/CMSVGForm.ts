@@ -1,4 +1,3 @@
-
 import BlueprintTabs_properties from "@coremedia-blueprint/studio-client.main.blueprint-forms/BlueprintTabs_properties";
 import CustomLabels_properties from "@coremedia-blueprint/studio-client.main.blueprint-forms/CustomLabels_properties";
 import CategoryDocumentForm
@@ -20,7 +19,6 @@ import SVGPluginDocTypes_properties from "@coremedia-blueprint/studio-client.svg
 import DocumentForm from "@coremedia/studio-client.main.editor-components/sdk/premular/DocumentForm";
 import DocumentTabPanel from "@coremedia/studio-client.main.editor-components/sdk/premular/DocumentTabPanel";
 import PropertyFieldGroup from "@coremedia/studio-client.main.editor-components/sdk/premular/PropertyFieldGroup";
-
 import BooleanPropertyField
   from "@coremedia/studio-client.main.editor-components/sdk/premular/fields/BooleanPropertyField";
 import StringPropertyField

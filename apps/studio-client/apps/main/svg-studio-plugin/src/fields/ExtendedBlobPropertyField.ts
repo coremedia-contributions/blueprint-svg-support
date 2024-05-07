@@ -24,7 +24,7 @@ class ExtendedBlobPropertyField extends BlobPropertyField {
     let activeItem = super.getActiveItem(config);
 
     if (activeItem !== BlobPropertyFieldBase.IMAGE_CONTAINER_ITEM_ID && (this.showImageThumbnail !== false)) {
-      // Additional check if blob is a SVG
+      // Additional check if blob is an SVG
       const content = config.bindTo.getValue();
       if (!content) {
         activeItem = undefined;
