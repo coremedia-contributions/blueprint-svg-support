@@ -50,8 +50,12 @@ Afterwards you can include the brick in your theme by adding the following depen
 
 ### Upload Configuration
 If an `CMSVG` content should be created, when business users upload SVG files in Studio, you need to adapt the `UploadSettings` (`/Settings/Options/Settings/UploadSettings`) by adding/adjusting the following mapping:
-```
-- mimeTypeMappings
-  - image/svg+xml=CMSVG
+```xml
+<StructProperty Name="mimeTypeMappings">
+  <Struct>
+    ...
+    <StringProperty Name="image/svg+xml">CMSVG</StringProperty>
+  </Struct>
+</StructProperty>
 ```
 For more details, please consult the section [6.1.14 Upload Files](https://documentation.coremedia.com/cmcc-12/artifacts/2404/webhelp/coremedia-en/content/Upload_dialog.html) in the Blueprint Developer Manual.
