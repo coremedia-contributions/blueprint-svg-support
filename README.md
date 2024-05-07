@@ -1,4 +1,4 @@
-![CoreMedia Content Cloud Version](https://img.shields.io/static/v1?message=2310&label=CoreMedia%20Content%20Cloud&style=for-the-badge&labelColor=666666&color=672779 "This badge shows the CoreMedia version(s) this project is compatible with.
+![CoreMedia Content Cloud Version](https://img.shields.io/static/v1?message=2404&label=CoreMedia%20Content%20Cloud&style=for-the-badge&labelColor=666666&color=672779 "This badge shows the CoreMedia version(s) this project is compatible with.
 Please read the versioning section of the project to see what other CoreMedia versions are supported and how to find them.")
 ![Status](https://img.shields.io/static/v1?message=active&label=Status&style=for-the-badge&labelColor=666666&color=2FAC66
 "The status badge describes if the project is maintained. Possible values are active and inactive.
@@ -39,7 +39,7 @@ Add a reference to the `svg-support` brick to the `frontend/workspace.yaml`.
 ```yaml
 packages:
   ...
-  - "../modules/extensions/svg/frontend/bricks/svg-support"
+  - '../modules/extensions/svg/frontend/bricks/svg-support'
 ```
 
 Afterwards you can include the brick in your theme by adding the following dependency in the theme `package.json`.
@@ -48,6 +48,10 @@ Afterwards you can include the brick in your theme by adding the following depen
 "@coremedia/brick-svg-support": "^1.0.0",
 ```
 
----
-
-
+### Upload Configuration
+If an `CMSVG` content should be created, when business users upload SVG files in Studio, you need to adapt the `UploadSettings` (`/Settings/Options/Settings/UploadSettings`) by adding/adjusting the following mapping:
+```
+- mimeTypeMappings
+  - image/svg+xml=CMSVG
+```
+For more details, please consult the section [6.1.14 Upload Files](https://documentation.coremedia.com/cmcc-12/artifacts/2404/webhelp/coremedia-en/content/Upload_dialog.html) in the Blueprint Developer Manual.

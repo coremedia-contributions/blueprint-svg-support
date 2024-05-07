@@ -1,8 +1,5 @@
 import Validators_properties
   from "@coremedia/studio-client.ext.errors-validation-components/validation/Validators_properties";
-import RichTextArea from "@coremedia/studio-client.main.ckeditor4-components/RichTextArea";
-import AddCKEditorPluginsPlugin
-  from "@coremedia/studio-client.main.ckeditor4-components/plugins/AddCKEditorPluginsPlugin";
 import CopyResourceBundleProperties
   from "@coremedia/studio-client.main.editor-components/configuration/CopyResourceBundleProperties";
 import StudioPlugin from "@coremedia/studio-client.main.editor-components/configuration/StudioPlugin";
@@ -30,7 +27,6 @@ class SvgStudioPlugin extends StudioPlugin {
     super(ConfigUtils.apply(Config(SvgStudioPlugin, {
 
       rules: [
-
         Config(TabbedDocumentFormDispatcher, {
           plugins: [
             Config(AddTabbedDocumentFormsPlugin, {
@@ -40,13 +36,6 @@ class SvgStudioPlugin extends StudioPlugin {
             }),
           ],
         }),
-
-        Config(RichTextArea, {
-          plugins: [
-            Config(AddCKEditorPluginsPlugin, { plugins: ["cmsvgsupport"] }),
-          ],
-        }),
-
       ],
 
       configuration: [
