@@ -10,7 +10,7 @@
 
   .cm-richtext-embedded--image {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 
     .cm-svg-media {
       width: $svg-support-richtext-embedded-width;
