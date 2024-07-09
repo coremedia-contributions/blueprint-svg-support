@@ -6,11 +6,12 @@
     "@coremedia-blueprint/studio-client.svg-plugin": "1.0.0-SNAPSHOT"
   },
   "devDependencies": {
-    "@jangaroo/build": "^3.0.0",
-    "@jangaroo/core": "^3.0.0",
-    "@jangaroo/publish": "^3.0.0",
+    "@jangaroo/build": "^3.0.1",
+
+    "@jangaroo/core": "^3.0.1",
+    "@jangaroo/publish": "^3.0.1",
     "eslint": "7.27.0",
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.7"
   },
   "scripts": {
     "clean": "rimraf ./dist && rimraf ./build",
