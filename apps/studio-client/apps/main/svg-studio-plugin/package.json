@@ -5,23 +5,23 @@
   "dependencies": {
     "@coremedia-blueprint/studio-client.svg-plugin": "workspace:*",
     "@coremedia-blueprint/studio-client.main.blueprint-forms": "workspace:*",
-    "@coremedia/studio-client.base-models": "^2412.0.0",
-    "@coremedia/studio-client.cap-base-models": "^2412.0.0",
-    "@coremedia/studio-client.cap-rest-client": "^2412.0.0",
-    "@coremedia/studio-client.client-core": "^2412.0.0",
-    "@coremedia/studio-client.ext.errors-validation-components": "^2412.0.0",
-    "@coremedia/studio-client.ext.ui-components": "^2412.0.0",
-    "@coremedia/studio-client.main.bpbase-studio-dynamic-query-list": "^2412.0.0",
-    "@coremedia/studio-client.main.editor-components": "^2412.0.0",
-    "@coremedia/studio-client.ext.richtext-components-toolkit": "^2412.0.0",
-    "@coremedia/studio-client.ext.ckeditor5-components": "^2412.0.0",
+    "@coremedia/studio-client.base-models": "^2412.0.1",
+    "@coremedia/studio-client.cap-base-models": "^2412.0.1",
+    "@coremedia/studio-client.cap-rest-client": "^2412.0.1",
+    "@coremedia/studio-client.client-core": "^2412.0.1",
+    "@coremedia/studio-client.ext.errors-validation-components": "^2412.0.1",
+    "@coremedia/studio-client.ext.ui-components": "^2412.0.1",
+    "@coremedia/studio-client.main.bpbase-studio-dynamic-query-list": "^2412.0.1",
+    "@coremedia/studio-client.main.editor-components": "^2412.0.1",
+    "@coremedia/studio-client.ext.richtext-components-toolkit": "^2412.0.1",
+    "@coremedia/studio-client.ext.ckeditor5-components": "^2412.0.1",
     "@jangaroo/ext-ts": "^2.0.0",
-    "@jangaroo/runtime": "^3.1.0"
+    "@jangaroo/runtime": "^3.2.0"
   },
   "devDependencies": {
-    "@jangaroo/build": "^3.1.0",
+    "@jangaroo/build": "^3.2.0",
 
-    "@jangaroo/core": "^3.1.0",
+    "@jangaroo/core": "^3.2.0",
     "@jangaroo/publish": "^3.1.0",
     "eslint": "^8.57.0",
 
