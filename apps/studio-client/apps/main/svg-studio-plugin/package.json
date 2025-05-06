@@ -15,7 +15,7 @@
     "@coremedia/studio-client.main.editor-components": "^2412.0.1",
     "@coremedia/studio-client.ext.richtext-components-toolkit": "^2412.0.1",
     "@coremedia/studio-client.ext.ckeditor5-components": "^2412.0.1",
-    "@jangaroo/ext-ts": "^2.0.0",
+    "@jangaroo/ext-ts": "^2.1.0",
     "@jangaroo/runtime": "^3.2.0"
   },
   "devDependencies": {
