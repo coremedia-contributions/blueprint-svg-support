@@ -4,7 +4,7 @@ import com.coremedia.blueprint.svg.validators.CMSVGImageMapValidator;
 import com.coremedia.blueprint.svg.validators.CMSVGValidator;
 import com.coremedia.cap.common.CapConnection;
 import com.coremedia.cap.content.ContentType;
-import com.coremedia.cap.undoc.common.spring.CapRepositoriesConfiguration;
+import com.coremedia.cms.uapi.config.CapRepositoriesConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
