@@ -3,7 +3,7 @@
 Use this brick in combination with the `CMSVG` content type to support SVG rendering.
 
 ## Installation
-Add the path to this brick to the `packages`section in your `<blueprint-workspace-root>/frontend/pnpm-workspace.yaml`:
+Add the path to this brick to the `packages` section in your `<blueprint-workspace-root>/frontend/pnpm-workspace.yaml`:
 
 **pnpm-workspace.yaml**
 ```yaml
