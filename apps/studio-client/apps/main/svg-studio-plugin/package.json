@@ -5,32 +5,30 @@
   "dependencies": {
     "@coremedia-blueprint/studio-client.svg-plugin": "workspace:*",
     "@coremedia-blueprint/studio-client.main.blueprint-forms": "workspace:*",
-    "@coremedia/studio-client.base-models": "^2506.0.0",
-    "@coremedia/studio-client.cap-base-models": "^2506.0.0",
-    "@coremedia/studio-client.cap-rest-client": "^2506.0.0",
-    "@coremedia/studio-client.client-core": "^2506.0.0",
-    "@coremedia/studio-client.ext.errors-validation-components": "^2506.0.0",
-    "@coremedia/studio-client.ext.ui-components": "^2506.0.0",
-    "@coremedia/studio-client.main.bpbase-studio-dynamic-query-list": "^2506.0.0",
-    "@coremedia/studio-client.main.editor-components": "^2506.0.0",
-    "@coremedia/studio-client.ext.richtext-components-toolkit": "^2506.0.0",
-    "@coremedia/studio-client.ext.ckeditor5-components": "^2506.0.0",
-    "@jangaroo/ext-ts": "^2.1.0",
-    "@jangaroo/runtime": "^3.3.1"
+    "@coremedia/studio-client.base-models": "catalog:",
+    "@coremedia/studio-client.cap-base-models": "catalog:",
+    "@coremedia/studio-client.cap-rest-client": "catalog:",
+    "@coremedia/studio-client.client-core": "catalog:",
+    "@coremedia/studio-client.ext.errors-validation-components": "catalog:",
+    "@coremedia/studio-client.ext.ui-components": "catalog:",
+    "@coremedia/studio-client.main.bpbase-studio-dynamic-query-list": "catalog:",
+    "@coremedia/studio-client.main.editor-components": "catalog:",
+    "@coremedia/studio-client.ext.richtext-components-toolkit": "catalog:",
+    "@coremedia/studio-client.ext.ckeditor5-components": "catalog:",
+    "@jangaroo/ext-ts": "catalog:",
+    "@jangaroo/runtime": "catalog:"
   },
   "devDependencies": {
-    "@jangaroo/build": "^3.3.1",
-    "@jangaroo/core": "^3.3.1",
-    "@jangaroo/publish": "^3.1.0",
-    "eslint": "^8.57.0",
-    "rimraf": "^5.0.7"
+    "@jangaroo/build": "catalog:",
+    "@jangaroo/core": "catalog:",
+    "eslint": "catalog:",
+    "rimraf": "catalog:"
   },
   "scripts": {
     "clean": "rimraf ./dist && rimraf ./build",
     "build": "jangaroo build",
     "watch": "jangaroo watch",
-    "publish": "jangaroo publish",
-    "lint": "eslint --fix \"src/**/*.ts\""
+    "lint": "eslint"
   },
   "exports": {
     "./*": {
