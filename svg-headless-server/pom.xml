@@ -21,6 +21,29 @@
 
 
     <!-- COREMEDIA dependencies -->
+    <dependency>
+      <groupId>com.coremedia.caas</groupId>
+      <artifactId>headless-server-web</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.caas</groupId>
+      <artifactId>headless-server-core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.caas</groupId>
+      <artifactId>headless-server.plugin-support</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-unified-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
 
 
     <!-- THIRD-PARTY dependencies -->
